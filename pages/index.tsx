@@ -5,13 +5,16 @@ import Profile from "./profile";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="flex justify-between items-start min-h-screen py-2">
+      {/* <div className="flex flex-col items-center justify-center min-h-screen py-2"> */}
       <Search />
       <Profile />
-      <Button />
-      <Button size={ESize.LARGE} type={EType.OUTLINE} />
-      <Button size={ESize.SMALL} />
-      
+      <div style={{ display: "grid" }}>
+        <Button />
+        <Button size={ESize.LARGE} type={EType.OUTLINE} />
+        <Button size={ESize.SMALL} />
+      </div>
+
       {/* <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
