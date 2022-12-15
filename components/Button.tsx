@@ -12,6 +12,7 @@ export enum EType {
 }
 
 interface IProps {
+  primary?: string;
   size?: ESize;
   type?: EType;
   color?: {
@@ -42,7 +43,7 @@ export default function Button({
       className={`${sizeClass} ${colorClass} rounded-lg font-bold text-white`}
       style={{ margin: "10px" }}
     >
-      Click me
+      Click me NOW
     </button>
   );
 }

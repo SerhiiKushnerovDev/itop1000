@@ -18,10 +18,9 @@ interface IStore {
   address: string;
   country: string;
   bio: string;
-};
+}
 
 export default function Profile() {
-
   const [state, dispatch] = useReducer(
     (store: IStore, action: IAction): IStore => {
       store[action.action] = action.payload;
@@ -46,36 +45,19 @@ export default function Profile() {
       className="max-w-screen-sm m-5 p-3 space-y-3 border"
       onSubmit={submitForm}
     >
-      <FormInput
-        id="name"
-        label="Name"
-        onInput={onInputCallBack("name")}
-        errorMessage={getErrorMessage(state.name)}
-      />
-      <FormInput
-        id="email"
-        label="Email"
-        onInput={onInputCallBack("email")}
-        errorMessage={getErrorMessage(state.email)}
-      />
-      <FormInput
-        id="address"
-        label="Address"
-        onInput={onInputCallBack("address")}
-        errorMessage={getErrorMessage(state.address)}
-      />
-      <FormInput
-        id="country"
-        label="Country"
-        onInput={onInputCallBack("country")}
-        errorMessage={getErrorMessage(state.country)}
-      />
-      <FormInput
-        id="bio"
-        label="About me"
-        onInput={onInputCallBack("bio")}
-        errorMessage={getErrorMessage(state.bio)}
-      />
+      {Object.keys(state)?.map((el, idx) => {
+        return (
+          <div key={idx}>
+            <FormInput
+              id={el}
+              label={el}
+              onInput={onInputCallBack(state[idx])}
+              errorMessage={state[idx]}
+            />
+          </div>
+        );
+      })}
+
       <div className="text-center pt-4">
         <button type="submit" className="ml-auto border p-3">
           Save
