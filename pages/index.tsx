@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Search from "./search";
-import Button, { ESize, EType } from "../components/Button";
+import Button from "../components/Button";
 import Profile from "./profile";
 
 export default function Home() {
@@ -11,8 +11,8 @@ export default function Home() {
       <Profile />
       <div style={{ display: "grid" }}>
         <Button />
-        <Button size={ESize.LARGE} type={EType.OUTLINE} />
-        <Button size={ESize.SMALL} />
+        <Button size={'small'} type={'button'} />
+        <Button size={'large'} />
       </div>
 
       {/* <Head>
