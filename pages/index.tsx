@@ -9,17 +9,21 @@ export default function Home() {
       {/* <div className="flex flex-col items-center justify-center min-h-screen py-2"> */}
       <Search />
       <Profile />
-      <div style={{ display: "grid" }}>
-        <Button />
-        <Button size={'small'} type={'button'} />
-        <Button size={'large'} />
-      </div>
-
-      {/* <Head>
+   
+      <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </Head>
 
+
+      <div style={{ display: "flex", border: "3px solid red"}}>
+        <Button />
+        <Button size={'small'} type={'button'} color="green" > Size large</Button>
+        <Button size={'large'} >Size large</Button>
+      </div>
+
+ {/*
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
         <h1 className="text-6xl font-bold">
           Welcome to{" "}

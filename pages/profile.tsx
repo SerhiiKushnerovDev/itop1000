@@ -1,4 +1,5 @@
 import { FormEvent, useCallback, useReducer } from "react";
+import Button from "../components/Button";
 
 import FormInput from "../components/FormInput";
 
@@ -57,6 +58,8 @@ export default function Profile() {
           </div>
         );
       })}
+
+        <Button size="large" color="green" />
 
       <div className="text-center pt-4">
         <button type="submit" className="ml-auto border p-3">

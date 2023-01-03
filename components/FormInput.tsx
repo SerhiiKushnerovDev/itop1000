@@ -30,9 +30,9 @@ export default memo(function FormInput({
           type="text"
           id={id}
           name={id}
-          className="w-full border rounded p-2"
+          className="w-full border rounded p-3"
           onInput={(e) => onInput(e.currentTarget.value)}
-          //  onBlur={(e) => onInput(e.currentTarget.value)}
+           onBlur={(e) => onInput(e.currentTarget.value)}
         />
         {errorMessage && <p className="text-sm text-red-600">{errorMessage}</p>}
       </div>
