@@ -18,10 +18,9 @@ interface IStore {
   address: string;
   country: string;
   bio: string;
-};
+}
 
 export default function Profile() {
-
   const [state, dispatch] = useReducer(
     (store: IStore, action: IAction): IStore => {
       store[action.action] = action.payload;
