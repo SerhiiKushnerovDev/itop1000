@@ -19,8 +19,8 @@ export default function Home() {
 
       <div style={{ display: "flex", border: "3px solid red"}}>
         <Button />
-        <Button size={'small'} type={'button'} color="green" > Size large</Button>
-        <Button size={'large'} >Size large</Button>
+        <Button size={'small'} type={'button'} color="green" text="Button one" />
+        <Button size={'large'} text="Button two"/>
       </div>
 
  {/*

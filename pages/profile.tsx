@@ -59,7 +59,9 @@ export default function Profile() {
         );
       })}
 
-        <Button size="large" color="green" />
+        <Button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+         size="small" color="green" text="this is my Buttton"
+          />
 
       <div className="text-center pt-4">
         <button type="submit" className="ml-auto border p-3">
