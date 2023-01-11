@@ -96,10 +96,11 @@ export default function Home() {
           </a>
         </div>
       </main>
+      */}
 
-      <footer className="flex items-center justify-center w-full h-24 border-t">
+      <footer className="flex items-center justify-end w-full h-24 border-t m-3">
         <a
-          className="flex items-center justify-center"
+          className=" items-end justify-end"
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
@@ -107,7 +108,7 @@ export default function Home() {
           Powered by{" "}
           <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
         </a>
-      </footer> */}
+      </footer>
     </div>
   );
 }

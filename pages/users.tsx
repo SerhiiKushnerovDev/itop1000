@@ -7,6 +7,7 @@ export default function Users() {
           textAlign: "center",
           fontSize: "5rem",
           backgroundColor: "greenyellow",
+          fontWeight: "bold",
         }}
       >
         <h1>Some Users</h1>
