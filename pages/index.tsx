@@ -5,7 +5,7 @@ import Profile from "./profile";
 
 export default function Home() {
   return (
-    <div className="flex justify-between items-start min-h-screen py-2">
+    <div className="flex justify-between items-start min-h-screen py-2 bg-gray-300">
       {/* <div className="flex flex-col items-center justify-center min-h-screen py-2"> */}
       <Search />
       <Profile />
