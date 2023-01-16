@@ -10,21 +10,21 @@
     "start-storybook": "npx http-server storybook-static"
   },
   "dependencies": {
-    "next": "latest",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "@types/node": "^18.11.18",
+    "next": "^12.1.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@bab l/core": "^7.14.3",
     "@storybook/addon-actions": "^6.2.9",
     "@storybook/addon-essentials": "^6.2.9",
     "@storybook/addon-links": "^6.2.9",
     "@storybook/addon-postcss": "^2.0.0",
-    "@storybook/react": "^6.2.9",
-    "@types/react": "^17.0.9",
+    "@storybook/react": "^6.5.15",
+    "@types/react": "^17.0.52",
     "autoprefixer": "^10.0.4",
     "postcss": "^8.1.10",
     "tailwindcss": "^2.2.19",
-    "typescript": "^4.3.2"
+    "typescript": "^4.9.4"
   }
 }
