@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.foot {
+    color: blue;
+    background-color: rgb(33, 202, 70);
+    border: 5px solid yellowgreen;
+}

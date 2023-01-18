@@ -1,5 +1,4 @@
 import React, { ButtonHTMLAttributes } from "react";
-import classNames from "classnames";
 
 export interface ButtonProps
   extends React.DetailedHTMLProps<
@@ -7,17 +6,32 @@ export interface ButtonProps
     HTMLButtonElement
   > {
   type?: "button" | "submit" | "reset";
+  minWidth?: string;
   size?: string;
   text?: string;
-  className?: string;
-  onClick?: () => void;
+  className?: any;
+  onClick?: (EVENT) => void;
+  someEvent?: () => void;
 }
 
-const Button = ({ type = "button", size, text, ...props }: ButtonProps) => {
-  console.log("this is props", props);
+const Button = ({
+  minWidth = "30vh",
+  type = "button",
+  size,
+  className = "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded",
+  text,
+  ...props
+}: ButtonProps) => {
+  console.log("this @@@@PROPS:::", props);
 
   return (
-    <button color={props?.color} type={type} {...props}>
+    <button
+      color={props?.color}
+      type={type}
+      onClick={props.onClick}
+      className={className}
+      {...props}
+    >
       {text}
     </button>
   );
