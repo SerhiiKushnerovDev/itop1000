@@ -1,6 +1,8 @@
+import { MainContainer } from "../components/MainContainer";
+
 export default function Users() {
   return (
-    <>
+    <MainContainer>
       <div
         style={{
           display: "block",
@@ -49,6 +51,6 @@ export default function Users() {
           </svg>
         </button>
       </div>
-    </>
+    </MainContainer>
   );
 }

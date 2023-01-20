@@ -4,6 +4,9 @@ import Button from "../components/Button";
 import Profile from "./profile";
 import { Context } from "../context/Context";
 import { useContext } from "react";
+import Link from "next/link";
+import Navbar from "../components/Navbar";
+import { MainContainer } from "../components/MainContainer";
 
 export default function Home() {
   const newContext = useContext(Context);
@@ -14,17 +17,12 @@ export default function Home() {
   };
 
   return (
-    <Context.Provider value={newContext}>
-      <div className="flex justify-between items-start min-h-screen py-2 bg-gray-300">
+    <MainContainer>
+      <div className="grid justify-between items-start min-h-screen py-2 bg-gray-300">
         {/* <div className="flex flex-col items-center justify-center min-h-screen py-2"> */}
         {/* <Search /> */}
         {/* <Profile /> */}
 
-        <Head>
-          <title>Create Next App</title>
-          <link rel="icon" href="/favicon.ico" />
-          <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-        </Head>
         {/*     
         <div className="relative w-56 h-56 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
           <button
@@ -47,17 +45,6 @@ export default function Home() {
             text="Button two"
           />
         </div> */}
-        <Button
-          text="Go Alert"
-          size="large"
-          onClick={() => alert("this is alert")}
-        />
-        <Button
-          text="Go Prompt"
-          size="large"
-          onClick={() => prompt("this is propmpt")}
-        />
-        <Button text="Change color" size="large" onClick={changeCollor} />
 
         <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
           <h1 className="text-6xl font-bold">
@@ -86,26 +73,6 @@ export default function Home() {
             </a>
 
             <a
-              href="https://nextjs.org/learn"
-              className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-            >
-              <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-              <p className="mt-4 text-xl">
-                Learn about Next.js in an interactive course with quizzes!
-              </p>
-            </a>
-
-            <a
-              href="https://github.com/vercel/next.js/tree/master/examples"
-              className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-            >
-              <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-              <p className="mt-4 text-xl">
-                Discover and deploy boilerplate example Next.js projects.
-              </p>
-            </a>
-
-            <a
               href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
               className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
             >
@@ -117,7 +84,7 @@ export default function Home() {
           </div>
         </main>
 
-        <div style={{ marginTop: "90vh", width: "100%" }}>
+        <div style={{ marginTop: "50vh", width: "100%" }}>
           <footer className="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
             <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
               © 2023{" "}
@@ -151,6 +118,6 @@ export default function Home() {
           </footer>
         </div>
       </div>
-    </Context.Provider>
+    </MainContainer>
   );
 }

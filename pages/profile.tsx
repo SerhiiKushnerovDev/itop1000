@@ -2,6 +2,7 @@ import { FormEvent, useCallback, useReducer } from "react";
 import Button from "../components/Button";
 
 import FormInput from "../components/FormInput";
+import { MainContainer } from "../components/MainContainer";
 import Navbar from "../components/Navbar";
 
 function getErrorMessage(input: string) {
@@ -43,7 +44,7 @@ export default function Profile() {
     useCallback((data) => dispatch({ action: actionName, payload: data }), []);
 
   return (
-    <>
+    <MainContainer>
       <form
         className="max-w-screen-sm m-5 p-3 space-y-3 border"
         onSubmit={submitForm}
@@ -73,17 +74,7 @@ export default function Profile() {
           </button>
         </div>
       </form>
-      <div>
-        <Navbar href={"/"} text="Main Page">
-          MAIN
-        </Navbar>
-        <Navbar href={"/profile"} text="Profile">
-          PROFILE
-        </Navbar>
-        <Navbar href={"/users"} text="Users">
-          USERS
-        </Navbar>
-      </div>
-    </>
+      <div></div>
+    </MainContainer>
   );
 }
