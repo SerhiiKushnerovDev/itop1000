@@ -7,6 +7,7 @@ export interface TypeMock {
     errorMessage: string;
     errorBack: string;
   };
+  pathData: Array<Object>;
 }
 
 export const MockData: TypeMock = {
@@ -16,4 +17,22 @@ export const MockData: TypeMock = {
     errorMessage: "Page Not Found",
     errorBack: "Go Home",
   },
+  pathData: [
+    {
+      href: "/",
+      text: "Main Page",
+    },
+    {
+      href: "/profile",
+      text: "Profile",
+    },
+    {
+      href: "/users",
+      text: "Users",
+    },
+    {
+      href: "/search",
+      text: "Search",
+    },
+  ],
 };

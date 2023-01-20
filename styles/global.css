@@ -1,14 +1,31 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
+@tailwind utilities;
 
+body{
+    background-color: rgb(194, 175, 175);
+}
 
-.foot {
-    color: blue;
-    background-color: rgb(33, 202, 70);
-    border: 5px solid yellowgreen;
+main {
+    margin-top: 15%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(35, 35, 37);
+    background-color: rgb(143, 143, 211);
+    width: 100%;
 }
 
 .navbar_items {
-    background-color: blue;
+    background-color: rgb(143, 143, 211);
+    display: flex;
+    justify-content: space-between;
+    font-size: 4vh;
+    padding: 10px;
+}
+.navbar_items :hover{
+    background-color: black;
+    color: white;
 }

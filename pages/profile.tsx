@@ -74,7 +74,6 @@ export default function Profile() {
           </button>
         </div>
       </form>
-      <div>{/* <Profile /> */} 2!!!!!!!!!!!!!!!!!!!!</div>
     </MainContainer>
   );
 }

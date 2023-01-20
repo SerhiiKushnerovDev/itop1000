@@ -63,7 +63,6 @@ export default function Search() {
             <li key={id}>{title}</li>
           ))}
         </ul>
-        <div>{/* <Search /> */} 1!!!!!!!!!!!!!!!!!!!!</div>
       </div>
     </MainContainer>
   );
