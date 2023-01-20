@@ -1,11 +1,5 @@
-import Head from "next/head";
-import Search from "./search";
-import Button from "../components/Button";
-import Profile from "./profile";
 import { Context } from "../context/Context";
 import { useContext } from "react";
-import Link from "next/link";
-import Navbar from "../components/Navbar";
 import { MainContainer } from "../components/MainContainer";
 
 export default function Home() {
@@ -19,33 +13,6 @@ export default function Home() {
   return (
     <MainContainer>
       <div className="grid justify-between items-start min-h-screen py-2 bg-gray-300">
-        {/* <div className="flex flex-col items-center justify-center min-h-screen py-2"> */}
-        {/* <Search /> */}
-        {/* <Profile /> */}
-
-        {/*     
-        <div className="relative w-56 h-56 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
-          <button
-            type="button"
-            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-          >
-            Default
-          </button>
-          <Button
-            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-            text="NEW Buuton"
-          />
-          <Button
-            text="Third button"
-            className="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
-          />
-          <Button
-            className="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:focus:ring-yellow-900"
-            size={"large"}
-            text="Button two"
-          />
-        </div> */}
-
         <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
           <h1 className="text-6xl font-bold">
             Welcome to{" "}

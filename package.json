@@ -13,7 +13,8 @@
     "@types/node": "^18.11.18",
     "next": "^12.1.5",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "webpack": "^5.75.0"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^6.2.9",
@@ -23,8 +24,10 @@
     "@storybook/react": "^6.5.15",
     "@types/react": "^17.0.52",
     "autoprefixer": "^10.0.4",
+    "css-loader": "^6.7.3",
     "postcss": "^8.1.10",
     "style-loader": "^3.3.1",
+    "stylelint-config-css-modules": "^4.1.0",
     "tailwindcss": "^2.2.19",
     "typescript": "^4.9.4"
   }

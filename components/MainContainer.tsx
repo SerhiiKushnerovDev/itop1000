@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import Head from "next/head";
+import { useCallback } from "react";
 
 export interface Main {
   children?: React.ReactNode;
@@ -7,8 +8,12 @@ export interface Main {
 }
 
 export const MainContainer = ({ children, keyword }: Main) => {
-  console.log("this is CHildren", children);
-
+  // const st = useCallback(() => {
+  //   if (!children) {
+  //     return;
+  //   }
+  // }, [children]);
+  // st();
   return (
     <>
       <Head>
@@ -16,17 +21,20 @@ export const MainContainer = ({ children, keyword }: Main) => {
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </Head>
-
-      <Navbar href={"/"} text="Main Page">
-        MAIN
-      </Navbar>
-      <Navbar href={"/profile"} text="Profile">
-        PROFILE
-      </Navbar>
-      <Navbar href={"/users"} text="Users">
-        USERS
-      </Navbar>
-
+      <div className="navbar_items">
+        <Navbar href={"/"} text="Main Page">
+          MAIN
+        </Navbar>
+        <Navbar href={"/profile"} text="Profile">
+          PROFILE
+        </Navbar>
+        <Navbar href={"/users"} text="Users">
+          USERS
+        </Navbar>
+        <Navbar href={"/search"} text="Search">
+          Search
+        </Navbar>
+      </div>
       <div>{children}</div>
     </>
   );
